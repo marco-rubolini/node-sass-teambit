@@ -1,0 +1,125 @@
+@mixin img-list {
+    width: 140px;
+    height: 105px;
+    object-fit: contain;
+}
+
+// Section jumbo
+
+.jumbo {
+
+    img {
+        width: 100%;
+    }
+
+    p {
+        margin-bottom: $margin_bottom_text + 10;
+        font-size: 22px;
+    }
+
+    .signup, .signup-with-email {
+        margin-bottom: $margin_bottom_text;
+
+        span {
+            padding: 0 10px;
+        }
+    }
+}
+
+// Section process-lead
+
+.process-lead {
+    background: $background_secondario;
+
+    span {
+        text-align: center;
+        display: block;
+        font-size: 24px;
+    }
+
+    .img-list {
+
+        width: 140px;
+        margin: auto;
+
+        img {
+            @include img-list;
+        }
+    }
+
+    p {
+        text-align: center;
+    }
+}
+// Section features
+
+.features {
+
+    .img-description {
+        max-width: 270px;
+        margin: 0 30px;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    p {
+        margin-bottom: $margin_bottom_text + 10;
+        font-size: 22px;
+    }
+}
+
+// Section get-started
+
+.get-started {
+    background: $background_secondario;
+
+    .quote {
+        border: 1px solid black;
+        padding: 10px 20px;
+        border-radius: 10px;
+        position: relative;
+        background: $background_primario;
+
+        .symbol-quote {
+            position: absolute;
+            width: 37px;
+            top: 0;
+            left: 0px;
+            transform: translate(-1px, -20px);
+        }
+
+        .info-quote {
+            display: flex;
+            align-items: center;
+
+            .author-image {
+                float: left;
+
+                img {
+                    width: 38px;
+                }
+            }
+
+            .author-info {
+                float: left;
+                margin: 0 10px;
+
+                span {
+                    display: block;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    .signup-with-email, .signup {
+        text-align: center;
+
+        a:hover {
+            color: $link_color;
+        }
+
+    }
+}

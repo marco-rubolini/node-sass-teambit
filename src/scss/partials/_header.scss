@@ -1,0 +1,40 @@
+header {
+
+    .container {
+        border-bottom: 1px solid black;
+    }
+
+    ul {
+        @include ul;
+
+        li {
+            display: inline-block;
+
+            a {
+                padding: 0 10px;
+                color: $link_color_menu;
+                font-size: 14px;
+                font-weight: 600;
+            }
+        }
+    }
+
+    .navbar {
+        height: 30px;
+        margin: 20px 0;
+    }
+
+    .nav-menu {
+        line-height: 30px;
+        float: right;
+
+        img {
+            width: 18px;
+        }
+    }
+
+    .icon-logo, .icon-arrow-down {
+        vertical-align: middle;
+    }
+
+}
